@@ -1,0 +1,68 @@
+<div class="relative" style="height: 100vh">
+  <div class="relative w-full bg-green-800 p-4" style="height: 200px">
+    <h1 class="text-5xl font-bold text-left text-white">DashBoard</h1>
+    <div class="relative w-full flex gap-3 top-5">
+      <div class="relative w-full h-36 bg-gray-100 rounded-lg shadow-md p-4">
+        <span class="text-green-600 text-xl text-left font-bold"
+          >Total Samples</span
+        >
+        <span
+          style="position: absolute; bottom: 20px; right: 20px"
+          class="text-3xl"
+          >30</span
+        >
+        <div class="absolute flex gap-2 bottom-4 left-2 text-white">
+          <span class="flex items-center p-2 rounded-xl shadow-sm bg-green-600">
+            <span class="material-symbols-outlined"> arrow_upward </span
+            ><span>10%</span>
+          </span>
+          <span class="flex items-center p-2 rounded-xl shadow-sm bg-red-600">
+            <span class="material-symbols-outlined"> arrow_downward </span
+            ><span>2%</span>
+          </span>
+        </div>
+        <span
+          class="absolute right-2 top-2 cursor-pointer bg-blue-200 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
+        >
+          <span class="material-symbols-outlined mt-1"> view_day </span>
+        </span>
+      </div>
+      <div class="relative w-full h-36 bg-gray-100 rounded-lg shadow-md p-4">
+        <span class="text-green-600 text-xl text-left font-bold"
+          >Samples Approved</span
+        >
+        <span
+          style="position: absolute; bottom: 20px; right: 20px"
+          class="text-3xl"
+          >200</span
+        >
+        <span
+          class="absolute right-2 top-2 cursor-pointer bg-blue-200 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
+        >
+          <span class="material-symbols-outlined mt-1"> view_day </span>
+        </span>
+      </div>
+      <div class="relative w-full h-36 bg-gray-100 rounded-lg shadow-md p-4">
+        <span class="text-green-600 text-xl text-left font-bold"
+          >Samples Rejected</span
+        >
+        <span
+          style="position: absolute; bottom: 20px; right: 20px"
+          class="text-3xl"
+          >70</span
+        >
+        <span
+          class="absolute right-2 top-2 cursor-pointer bg-blue-200 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
+        >
+          <span class="material-symbols-outlined mt-1"> view_day </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16">
+    <div>
+      <span class="text-3xl font-bold">UNRA Requisitons List</span>
+    </div>
+    <app-list-views></app-list-views>
+  </div>
+</div>
