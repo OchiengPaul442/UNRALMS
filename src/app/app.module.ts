@@ -13,6 +13,7 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { SettingsComponent } from './views/settings/settings.component';
+import { TFVFORMComponent } from './components/tfv-form/tfv-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SettingsComponent } from './views/settings/settings.component';
     SideNavComponent,
     RequisitionFormComponent,
     DashboardComponent,
-    SettingsComponent
+    SettingsComponent,
+    TFVFORMComponent
   ],
   imports: [
     BrowserModule,
