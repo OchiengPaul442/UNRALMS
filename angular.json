@@ -23,9 +23,14 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/flowbite/dist/flowbite.js",
+              "node_modules/tw-elements/dist/js/index.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
