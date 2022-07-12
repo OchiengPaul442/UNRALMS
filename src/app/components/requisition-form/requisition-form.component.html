@@ -1,12 +1,82 @@
 <!-- form section starts -->
-<div
-  class="container mx-auto w-5/6 flex justify-center items-center pb-20 z-50"
->
+<div class="mx-auto w-full flex justify-center items-center pb-20 z-50">
   <div class="row w-full">
+    <!-- different forms for data entry -->
+    <div class="mb-4 inline-flex justify-around gap-2 w-full">
+      <span>
+        <span class="material-symbols-outlined"> tune </span>
+      </span> 
+      <div class="w-full overflow-x-auto">
+      
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> TF Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> Soil Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> SG Soil Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> NMC Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> ICL Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> UCS Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> MDD Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> ACV Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> PI Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> LAAV Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> TFV Form</a>
+      </span>
+      <span
+        class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+      >
+        <a class="relative"> AIV Form</a>
+      </span>
+      </div>
+    </div>
     <div>
-      <h1 class="text-5xl text-green-800 py-6 font-extrabold">Requisition Form</h1>
+      <span class="text-4xl text-green-800 py-4 font-extrabold">
+        Requisition Form
+      </span>
     </div>
     <form
+      class="mt-4"
       #reqForm="ngForm"
       (ngSubmit)="getUserData(reqForm.value)"
       autocomplete="off"
