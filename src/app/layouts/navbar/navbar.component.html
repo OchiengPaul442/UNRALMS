@@ -1,68 +1,79 @@
 <nav class="fixed z-30 w-full bg-white border-b-2 border-green-600">
-      <div class="px-6 py-3">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center justify-start">
-            <img src="../assets/img/unralogo.png" width="45px" alt="unralogo">
-            <a href="#" class="lg:hidden sm:visible flex items-center text-xl font-bold">
-              <span class="text-green-600"
-                >UNRA LMS</span
-              >
-            </a>
-            <a href="#" class="lg:visible lg:flex sm:hidden items-center text-xl font-bold">
-              <span class="text-green-600"
-                >UNRA Laboratory Management System</span
-              >
-            </a>
-
-          </div>
-          <div class="flex items-center">
-            <div class="hidden mr-6 lg:block">
-              <form action="#">
-                <label class="sr-only">Search</label>
-                <div class="relative mt-1 lg:w-64">
-                  <div class="absolute inset-y-0 left-0 flex items-center pl-3">
-                    <span class="material-symbols-outlined">
-                      search
-                      </span>
-                  </div>
-                  <input
-                    type="text"
-                    name="name"
-                    class="border text-gray-900 sm:text-sm rounded-lg focus:outline-none focus:ring-1 block w-full pl-10 p-2.5"
-                    placeholder="Search"
-                  />
-                </div>
-              </form>
+  <div class="px-6 py-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center justify-start">
+        <img src="../assets/img/unralogo.png" width="45px" alt="unralogo" />
+        <a
+          href="#"
+          class="xl:hidden lg:hidden sm:flex items-center text-xl font-bold"
+        >
+          <span class="text-green-600">UNRA LMS</span>
+        </a>
+        <a
+          href="#"
+          class="hidden xl:flex lg:flex items-center text-xl font-bold"
+        >
+          <span class="text-green-600">UNRA Laboratory Management System</span>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <div class="hidden mr-6 lg:block">
+          <form action="#">
+            <label class="sr-only">Search</label>
+            <div class="relative mt-1 lg:w-64">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <span class="material-symbols-outlined"> search </span>
+              </div>
+              <input
+                type="text"
+                name="name"
+                class="border text-gray-900 sm:text-sm rounded-lg focus:outline-none focus:ring-1 block w-full pl-10 p-2.5"
+                placeholder="Search"
+              />
             </div>
-            <div>
+          </form>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> notifications </span>
+        </div>
+
+        <div class="relative inline-block">
+          <div class="flex items-center">
+            <!-- Dropdown toggle button -->
+            <button
+              (click)="openDropdwon()"
+              class="relative flex items-center p-2 text-sm text-gray-600 bg-white border border-transparent rounded-md focus:border-blue-500 focus:ring-opacity-40 dark:focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-blue-400 focus:ring dark:text-white dark:bg-gray-800 focus:outline-none"
+            >
+              <span class="mx-1">Ochieng Paul</span>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </button>
+            <!-- menu button -->
+            <div class="cursor-pointer p-3 menu_btn_open text-green-600 hidden" (click)="showMenu()">
+              <span class="material-symbols-outlined"> menu </span>
+            </div>
+            <div class="cursor-pointer p-3 menu_btn_close text-red-600 hidden" (click)="closeMenu()">
               <span class="material-symbols-outlined">
-                notifications
+                close
                 </span>
             </div>
-
-            <div class="relative inline-block">
-              <!-- Dropdown toggle button -->
-              <button (click)="openDropdwon()"
-                class="relative flex items-center p-2 text-sm text-gray-600 bg-white border border-transparent rounded-md focus:border-blue-500 focus:ring-opacity-40 dark:focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-blue-400 focus:ring dark:text-white dark:bg-gray-800 focus:outline-none"
-              >
-                <span class="mx-1">Ochieng Paul</span>
-                <span class="material-symbols-outlined">
-                  expand_more
-                  </span>
-              </button>
-
-              <!-- Dropdown menu -->
-              <div id="dropdownMenu"
-                class="shadow-md border absolute right-0 z-20 w-56 mt-2 overflow-hidden hidden bg-white rounded-md"
-              >
-              <ul class="p-2 text-center space-y-2">
-                <li class="hover:bg-gray-100 w-full p-2"><a class="cursor-pointer text-md">Settings</a></li>
-                <hr>
-                <li class="hover:bg-gray-100 w-full p-2"><a class="cursor-pointer text-md text-red-600">Logout</a></li>
-              </ul>
-            </div>
-            </div>
+          </div>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownMenu"
+            class="shadow-md border absolute right-0 z-20 w-56 mt-2 overflow-hidden hidden bg-white rounded-md"
+          >
+            <ul class="p-2 text-center space-y-2">
+              <li class="hover:bg-gray-100 w-full p-2">
+                <a class="cursor-pointer text-md">Settings</a>
+              </li>
+              <hr />
+              <li class="hover:bg-gray-100 w-full p-2">
+                <a class="cursor-pointer text-md text-red-600">Logout</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>

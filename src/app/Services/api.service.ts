@@ -21,17 +21,10 @@ export class APIService {
     { headers: this.httpHeaders });
   }
 
-  // edits requisition
-  editRequisition(id: number): Observable<any> {
-    return this.http.get(this.baseUrl + '/requisitions/'+ id,
-     { headers: this.httpHeaders });
-  }
-
   // posting requisition to the API
   saveUserData(data:any){
-    return this.http.post(this.baseUrl, + '/requisitions/'+ data,
-     { headers: this.httpHeaders });
+    return this.http.post(this.baseUrl, + '/requisitions/'+ data + '/',
+   );
   }
-
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { APIService } from 'src/app/Services/api.service';
 import * as $ from 'jquery';
 
 
@@ -15,7 +16,7 @@ export class RequisitionFormComponent implements OnInit {
     $("#newInputForm").append('<input type="text" id="testrequired" class="bg-gray-50 border mb-6 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="" required="">');
   }
 
-  constructor(public fb: FormBuilder) { 
+  constructor(public fb: FormBuilder, private API: APIService) { 
     this.form = this.fb.group({
       // id: 0, 
       attentionOf: ['',Validators.required],
@@ -39,12 +40,12 @@ export class RequisitionFormComponent implements OnInit {
   }
 
   // posting requisition to the API
-  getUserData(data: any) {
-    console.log(data);
-    // this.API.saveUserData(data).subscribe(data => {
-    //   alert("Data Saved");
-    // } 
-    // );
+  getUserData(form:any) {
+    console.log(form);
+    this.API.saveUserData(form).subscribe((data:any) => {
+      alert("Data Saved");
+    } 
+    );
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { APIService } from '../../Services/api.service';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -11,7 +12,7 @@ export class ListViewsComponent implements OnInit {
 
   constructor(private API: APIService) {
     this.getRequisitions();
-   }
+  }
 
   ngOnInit(): void {
   }
@@ -21,6 +22,10 @@ export class ListViewsComponent implements OnInit {
     this.API.getAllRequisitions().subscribe(data => {
       this.requisitions = data;
     });
+  }
+  
+  // edit requisition list
+  onEdit() {
   }
 
 

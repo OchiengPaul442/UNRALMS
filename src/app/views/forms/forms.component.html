@@ -1,0 +1,107 @@
+<!-- form section starts -->
+<div class="mx-auto w-full flex justify-center items-center pb-20 z-50">
+  <div class="row w-full">
+    <!-- different forms for data entry -->
+    <div class="tablinks mb-4 inline-flex justify-around gap-2 w-full">
+      <span>
+        <span class="material-symbols-outlined"> tune </span>
+      </span>
+      <!-- routerlink to display the requisition form when the button is clicked -->
+      <div class="w-full overflow-x-auto">
+        <span
+          routerLinkActive="active" (click)="hide()"
+          [routerLink]="[
+            '/forms',
+            { outlets: { Forms: ['requisition-form'] } }
+          ]"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> Requisition Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          [routerLink]="['/forms', { outlets: { Forms: ['tfv-form'] } }]"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> TFV Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> SG Soil Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> NMC Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> ICL Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> UCS Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> MDD Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> ACV Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> PI Form</a>
+        </span>
+        <span
+          routerLinkActive="active" (click)="hide()"
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> LAAV Form</a>
+        </span>
+        <span
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> TFV Form</a>
+        </span>
+        <span
+          class="bg-orange-100 text-orange-800 text-xs duration-500 font-semibold mr-2 px-2.5 py-0.5 rounded hover:bg-orange-500 cursor-pointer hover:text-white"
+        >
+          <a class="relative"> AIV Form</a>
+        </span>
+      </div>
+    </div>
+    <!-- end of different forms for data entry -->
+    <!-- form starts -->
+    <!-- <div>
+      <div id="TitleForms">
+        <span 
+          class="Title_Forms text-3xl text-center font-bold"
+          style="
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          ">Select a form for data Entry !!</span
+        >
+      </div> -->
+      <!-- displaying the different forms -->
+      <router-outlet name="Forms"></router-outlet>
+    <!-- </div> -->
+    <!-- form ends -->
+  </div>
+</div>

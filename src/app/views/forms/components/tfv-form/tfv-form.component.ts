@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tfv-form',
-  templateUrl: './tfv-form.component.html',
-  styleUrls: ['./tfv-form.component.css']
+  templateUrl: './tfv-form.component.html'
 })
 export class TFVFORMComponent implements OnInit {
 
