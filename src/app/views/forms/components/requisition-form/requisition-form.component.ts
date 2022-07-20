@@ -18,21 +18,21 @@ export class RequisitionFormComponent implements OnInit {
 
   constructor(public fb: FormBuilder, private API: APIService) { 
     this.form = this.fb.group({
-      // id: 0, 
-      attentionOf: ['',Validators.required],
-      from: ['',Validators.required],
-      date_: ['',Validators.required],
-      RefNo: ['',Validators.required],
-      Description: ['',Validators.required],
-      testrequired: ['',Validators.required],
-      Review: ['',Validators.required],
+      // make sure that the names are the same as the end points on the API side to avoid Errors
+      Attention_Of: ['',Validators.required],
+      From_requester: ['',Validators.required],
+      Test_date: ['',Validators.required],
+      Sample_Ref_No: ['',Validators.required],
+      Sample_Description: ['',Validators.required],
+      Tests_Required: ['',Validators.required],
+      Review_check_approve: ['',Validators.required],
       Program: ['',Validators.required],
-      startdate: ['',Validators.required],
-      enddate: ['',Validators.required],
+      Start_Date: ['',Validators.required],
+      Completion_Date: ['',Validators.required],
       Comments: ['',Validators.required],
-      requester: ['',Validators.required],
-      labmanagersign: ['',Validators.required],
-      signeddate: ['',Validators.required]
+      Requester_Sign: ['',Validators.required],
+      Manager_sign: ['',Validators.required],
+      LabMan_Sign_Date: ['',Validators.required]
     });
   }
 
@@ -41,7 +41,6 @@ export class RequisitionFormComponent implements OnInit {
 
   // posting requisition to the API
   getUserData(form:any) {
-    console.log(form);
     this.API.saveUserData(form).subscribe((data:any) => {
       alert("Data Saved");
     } 

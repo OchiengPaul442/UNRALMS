@@ -22,9 +22,9 @@ export class APIService {
   }
 
   // posting requisition to the API
-  saveUserData(data:any){
-    return this.http.post(this.baseUrl, + '/requisitions/'+ data + '/',
-   );
+  saveUserData(data:any): Observable<any> {
+    const url = this.baseUrl + '/requisitions/';
+    return this.http.post(url, data);
   }
 
 }
